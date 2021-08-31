@@ -1,7 +1,9 @@
 version: '3'
 services:
-  go-docker-image:
-    build: ./dockerfile.debug
+  docker-dev-test-debug:
+    build:
+      context: .
+      dockerfile: ./dockerfile.debug
     ports:
       - 8080:8080
     volumes:
