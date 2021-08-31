@@ -1,0 +1,9 @@
+FROM golang:latest
+
+WORKDIR /app
+
+COPY . /app/.
+
+# normally we would want a smarter entrypoint here (copy in a build object)
+# but this is fine for demo purposes
+ENTRYPOINT go run .

@@ -10,5 +10,5 @@ func main() {
 }
 
 func HelloServer(w http.ResponseWriter, r *http.Request) {
-    w.Write([]byte("hello from remote!"))
+    w.Write([]byte("hello from container!"))
 }
